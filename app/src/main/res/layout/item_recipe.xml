@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/grid_layout_cart"
+    android:layout_width="180dp"
+    android:background="@drawable/card_item"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:columnCount="1"
+    android:rowCount="4"
+    android:layout_height="220dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/foodimg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/salmon" />
+
+    <TextView
+        android:id="@+id/foodname"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:textColor="@color/black"
+        android:text="Spicy Ramen Noodle" />
+
+
+    <TextView
+        android:id="@+id/foodcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_row="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_column="0"
+        android:textColor="@color/grey"
+        android:text="239cal" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:backgroundTint="@color/orange"
+        android:text="Start Cooking" />
+
+
+</GridLayout>
